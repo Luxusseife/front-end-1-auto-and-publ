@@ -1,0 +1,274 @@
+/* MOMENT 1, AUTOMATISERING OCH PUBLICERING, JELI2308. */
+
+
+/* GENERELLA REGLER. */
+
+/* Återställer default-värden. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body. */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MEDIA QUERIES FÖR RUBRIKER OCH BRÖDTEXT. */
+
+@media (min-width: 769px) {
+
+    /* Rubriker och brödtext. */
+    h1, p main {
+        font-size: 125%;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    /* Rubriker och brödtext. */
+    h1, p {
+        font-size: 150%;
+    }
+}
+
+
+
+/* HEADER INKL. LOGOTYP och MOBIL-MENY. */
+
+/* Logotyp. */
+#logo {
+    padding: 0 0 0 40px;
+    max-width: 170px;
+    height: auto;
+}
+
+/* Header. */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004F4F;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+}
+
+/* Utfälld meny som visas vid meny-klick. */
+nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    background-color: #004F4F;
+    font-size: 1.4rem;
+    width: 320px;
+    height: 350px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+
+nav li:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a {
+    color: #ffffff;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    font-size: 125%;
+    text-shadow: 1px 2px #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Meny-knapp, öppnar menyn nav. */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    background-color: #004F4F;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+.open {
+    margin: 0 5% 0 0;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    margin-right: 5px;
+}
+
+/* Hamburger-ikon, tre svarta streck. */
+.bars {
+    display: block;
+    background-color: #ffffff;
+    width: 20px;
+    height: 3px;
+    margin: 5px 0;
+}
+
+/* Meny-text; MENY och STÄNG. */
+.menu-text {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Meny-knapp, stänger den utfällda menyn. */
+.close {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding: 14px 10px;
+    border: none;
+    border: 1px solid #D6ECE8;
+    border-radius: 5px;
+}
+
+/* Stäng-ikon, två lodräta streck som roterar till ett kryss. */
+.cross1 {
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+}
+
+.cross2 {
+    width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+}
+
+/* MOBIL-MENYN, ÄNDRAS TILL VANLIG NAV-MENY VID MINBREDD 769PX (STÖRRE SKÄRMAR). */
+@media (min-width: 769px) {
+
+    /* Logotyp. */
+    #logo {
+        padding: 0 0 0 50px;
+        max-width: 270px;
+        height: auto;
+    }
+
+    /* Header. */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #004F4F;
+        width: 100%;
+        height: 100px;
+        margin: 0;
+    }
+
+    /* Meny-knapp som ej syns. */
+    .menu-btn {
+        display: none;
+    }
+
+    #open-menu {
+        display: none !important;
+    }
+
+    /* Ändring för vanlig nav-meny. */
+    nav {
+        display: block !important;
+        position: static;
+        height: auto;
+        font-size: 1.4rem;
+        width: auto;
+    }
+
+    nav ul {
+        height: 100%;
+    }
+
+    nav li {
+        display: inline;
+        padding: 1.2rem;
+    }
+
+    nav a {
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+        padding: 20px 0;
+        margin: 0 0.5rem 0 0.5rem;
+        box-shadow: none;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    nav li:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    nav a:hover {
+        font-size: 125%;
+        text-shadow: 1px 2px #000000;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+
+
+/* MAIN. */
+
+
+
+/* MEDIA QUERY FÖR MAIN, SKÄRMAR STÖRRE ÄN 769PX SAMT 1440PX. */
+
+@media (min-width: 769px) {
+
+    
+}
+
+@media (min-width: 1440px) {
+
+   
+}
+
+/* FOOTER. */
+footer {
+    margin-top: auto;
+    width: 100%;
+    height: 100px;
+    background-color: #4F4F4F;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    padding: 1rem 0 0 0;
+}
