@@ -13,5 +13,6 @@ Detta optimerar och minifiera olika filer och publicerar även projektändringar
 6. Lägg till scripts i informationen (package.json). Ange "parcel" som start och "parcel build" som build. Detta paketerar ihop webbplatsen olika delar inför publicering.
 7. Ange type="module" inom script-taggen i HTML-filerna. PARCEL paketerar då ihop samtliga JS-filer i en extern fil automatiskt vid publicering.
 8. Testkör projektet genom *npm start* i terminalen. PARCEL startas och skapar en live-server där webbplatsen visas. Filerna för visning/testkörning läggs i en ny .dist-mapp medan src-mappen förblir en mapp för arbetsfiler.
-9. Kör *npm run build* i terminalen för att publicera webbplatsen. Det som sker automatiskt är att HTML-filerna och CSS-filerna samt minifierar och transpilerar JS-filerna.
-10.  
+9. Kör *npm run build* i terminalen för att göra webbplatsen redo för publicering. Det som sker automatiskt är att HTML-filerna och CSS-filerna samt minifierar och transpilerar JS-filerna.
+10. Skapa en README-fil och publicera projektet till GitHub. Projektet publiceras och en första commit görs automatiskt.
+11. Publicera projektet på plattformen Netlify. Bygg-kommandot är npm run build medan publicerings-mapp är .dist.    
