@@ -259,7 +259,21 @@ h2, h3 {
 
 /* MAIN, PHOTOS. */
 
+.grid-container-photos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+    place-items: center;
+    margin: 0 0 2rem 0;
+}
 
+.img {
+    border: 1px solid #e6e5e5;
+    border-radius: 10%;
+    width: 100%;
+    height: auto;
+}
 
 /* MAIN, PROCESS. */
 
@@ -274,18 +288,34 @@ h2, h3 {
     max-width: 60ch;
 }
 
-.flex-container-process ol  {
+.flex-container-process ol {
     text-align: left;
     line-height: 1.6;
     padding: 1rem;
     max-width: 55ch;
 }
 
-.flex-container-process li  {
+.flex-container-process li {
     padding: 0.5rem 0 0.5rem 0;
 }
 
-/* MEDIA QUERY FÖR MAIN, SKÄRMAR STÖRRE ÄN 1920PX. */
+/* MEDIA QUERIES FÖR MAIN. */
+
+@media (min-width: 900px) {
+    .grid-container-photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+@media (min-width: 1441px) {
+    .grid-container-photos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+}
 
 @media (min-width: 1920px) {
     main p, main li {

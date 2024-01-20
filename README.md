@@ -21,3 +21,4 @@ Detta optimerar och minifiera olika filer och publicerar även projektändringar
 14. Möjliggör bakåtkompabilitet genom att lägga till browserslist-inställningar i package.json-filen.
 15. Gör en commit med ändringarna för steg 14, denna gång till dev-branchen.
 16. Skapa ett innehåll med text på index.html och process.html och gör commits efter varje sida blivit klar.
+17. Skapa ett innehåll med bilder på photos.html och nyttja PARCELs stöd för bildhantering genom inställningar i srcset-taggen. Bilderna storleksändras, konverteras och optimeras då enligt inställningarna. Gör en commit med ändringarna.
