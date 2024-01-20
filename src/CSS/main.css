@@ -19,24 +19,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* MEDIA QUERIES FÖR RUBRIKER OCH BRÖDTEXT. */
-
-@media (min-width: 769px) {
-
-    /* Rubriker och brödtext. */
-    h1, p main {
-        font-size: 125%;
-    }
-}
-
-@media (min-width: 1440px) {
-
-    /* Rubriker och brödtext. */
-    h1, p {
-        font-size: 150%;
-    }
-}
-
 
 
 /* HEADER INKL. LOGOTYP och MOBIL-MENY. */
@@ -243,22 +225,77 @@ nav a:hover {
     }
 }
 
+/* RUBRIKER FÖR SAMTLIGA SIDOR. */
 
-
-/* MAIN. */
-
-
-
-/* MEDIA QUERY FÖR MAIN, SKÄRMAR STÖRRE ÄN 769PX SAMT 1440PX. */
-
-@media (min-width: 769px) {
-
-    
+h1 {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
 }
 
-@media (min-width: 1440px) {
+h2, h3 {
+    text-align: center;
+    margin: 2rem 0 0.5rem 0;
+}
 
-   
+/* MAIN, INDEX. */
+
+/* Text-container. */
+.flex-container-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #004F4F;
+    background-color: #e6e5e5;
+    margin: 0 auto 2rem auto;
+    max-width: 60ch;
+}
+
+.flex-container-index p  {
+    text-align: left;
+    line-height: 1.6;
+    padding: 0 1rem 1rem 1rem;
+    max-width: 55ch;
+}
+
+/* MAIN, PHOTOS. */
+
+
+
+/* MAIN, PROCESS. */
+
+/* Text-container. */
+.flex-container-process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #004F4F;
+    background-color: #e6e5e5;
+    margin: 0 auto 2rem auto;
+    max-width: 60ch;
+}
+
+.flex-container-process ol  {
+    text-align: left;
+    line-height: 1.6;
+    padding: 1rem;
+    max-width: 55ch;
+}
+
+.flex-container-process li  {
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+/* MEDIA QUERY FÖR MAIN, SKÄRMAR STÖRRE ÄN 1920PX. */
+
+@media (min-width: 1920px) {
+    main p, main li {
+        font-size: 20px;
+    }
+    
+    .flex-container-index, .flex-container-process {
+        max-width: 80ch;
+        padding-bottom: 2rem;
+    }
 }
 
 /* FOOTER. */

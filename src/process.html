@@ -43,9 +43,32 @@
     </header>
 
     <main>
-            
-    </main>
+        <h1>Arbetsprocess</h1>
 
+        <div class="flex-container-process">
+            <article>
+                <h2>Så här skapades denna webbplats:</h2>
+                <ol>
+                    <li>Skapar ett nytt NPM-projekt med npm init i terminalen. En package.json-fil med information om projektet skapas.</li>
+                    <li>Installerar PARCEL-paketet med npm install parcel --save-dev. Detta installerar paketet som ett utvecklingsberoende och mappen node_modules skapas.</li>
+                    <li>Skapar en .gitignore-fil där node_modules/ skrivs in. Detta gör att mappen inte versionhanteras.</li>
+                    <li>Anger i informationen (package.json) vilken startfil projektet ska ha; .index.html anges.</li>
+                    <li>Skapar en katalog med namnet src. Här samlas alla projekt-filer som är under utveckling.</li>
+                    <li>Lägger till scripts i informationen (package.json). Anger "parcel" som start och "parcel build" som build. Detta paketerar ihop webbplatsens olika delar inför publicering.</li>
+                    <li>Anger type="module" inom script-taggen i HTML-filerna. PARCEL paketerar då ihop samtliga JS-filer i en extern fil automatiskt vid publicering.</li>
+                    <li>Testkör projektet genom npm start i terminalen. PARCEL startas och skapar en live-server där webbplatsen visas. Filerna för visning/testkörning läggs i en ny .dist-mapp medan src-mappen förblir en mapp för arbetsfiler.</li>
+                    <li> Kör *npm run build* i terminalen för att göra webbplatsen redo för publicering. Det som sker automatiskt är att HTML-filerna, CSS-filen och JS-filen minifieras. Det transpilerar även JS-filen.</li>
+                    <li>Lägger till .dist samt .parcel-cache i .gitignore. De kommer då inte versionhanteras.</li>
+                    <li>Skapar en README-fil med information om uppgiften och en lista med uppgiftens olika steg. Publicerar sen projektet till GitHub. En första commit görs automatiskt.</li>
+                    <li>Publicerar projektet på plattformen Netlify via GitHub. Bygg-kommandot är npm run build medan publicerings-mapp är .dist.</li>
+                    <li>Skapar en dev-branch i GitHub. Arbetsfiler och publicerings-filer skiljs då åt under utvecklingen av webbplatsen tills dess att den är klar.</li>
+                    <li>Möjliggör bakåtkompabilitet genom att lägga till browserslist-inställningar i package.json-filen.</li>
+                    <li>Gör en commit med ändringarna för steg 14, denna gång till den nya dev-branchen.</li>
+                    <li>Skapar ett innehåll med text på index.html och process.html och gör commits efter varje sida blivit klar.</li>
+                </ol>
+            </article>
+        </div>  
+    </main>
     <footer>
         <p>
             Laborationsuppgift för kursen DT211G, Frontend-baserad webbutveckling.
