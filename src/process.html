@@ -57,7 +57,7 @@
                     <li>Lägger till scripts i informationen (package.json). Anger "parcel" som start och "parcel build" som build. Detta paketerar ihop webbplatsens olika delar inför publicering.</li>
                     <li>Anger type="module" inom script-taggen i HTML-filerna. PARCEL paketerar då ihop samtliga JS-filer i en extern fil automatiskt vid publicering.</li>
                     <li>Testkör projektet genom npm start i terminalen. PARCEL startas och skapar en live-server där webbplatsen visas. Filerna för visning/testkörning läggs i en ny .dist-mapp medan src-mappen förblir en mapp för arbetsfiler.</li>
-                    <li> Kör *npm run build* i terminalen för att göra webbplatsen redo för publicering. Det som sker automatiskt är att HTML-filerna, CSS-filen och JS-filen minifieras. Det transpilerar även JS-filen.</li>
+                    <li> Kör npm run build i terminalen för att göra webbplatsen redo för publicering. Det som sker automatiskt är att HTML-filerna, CSS-filen och JS-filen minifieras. Det transpilerar även JS-filen.</li>
                     <li>Lägger till .dist samt .parcel-cache i .gitignore. De kommer då inte versionhanteras.</li>
                     <li>Skapar en README-fil med information om uppgiften och en lista med uppgiftens olika steg. Publicerar sen projektet till GitHub. En första commit görs automatiskt.</li>
                     <li>Publicerar projektet på plattformen Netlify via GitHub. Bygg-kommandot är npm run build medan publicerings-mapp är .dist.</li>
@@ -65,6 +65,8 @@
                     <li>Möjliggör bakåtkompabilitet genom att lägga till browserslist-inställningar i package.json-filen.</li>
                     <li>Gör en commit med ändringarna för steg 14, denna gång till den nya dev-branchen.</li>
                     <li>Skapar ett innehåll med text på index.html och process.html och gör commits efter varje sida blivit klar.</li>
+                    <li>Skapar ett innehåll med bilder på photos.html och nyttjar PARCELs stöd för bildhantering genom inställningar i srcset-taggen. Bilderna storleksändras, konverteras och optimeras då enligt inställningarna. Gör en commit med ändringarna.</li>
+                    <li>Skapar en sharp.config.json-fil, anger bildinställningar för jpeg-format och webp-format och gör en commit med ändringarna.</li>
                 </ol>
             </article>
         </div>  

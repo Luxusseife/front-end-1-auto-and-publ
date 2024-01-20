@@ -9,7 +9,7 @@ Detta optimerar och minifiera olika filer och publicerar även projektändringar
 2. Installera PARCEL-paketet med *npm install parcel --save-dev*. Detta installerar paketet som ett utvecklingsberoende och mappen node_modules skapas. 
 3. Skapa en .gitignore-fil där node_modules/ skrivs in. Detta gör att mappen inte versionhanteras.
 4. Ange i informationen (package.json) vilken startfil projektet ska ha; .index.html anges.
-5. Skapa katalog med namnet src. Här samlas alla projekt-filer som är under utveckling.
+5. Skapa katalog med namnet src. Här samlas alla projekt-filer som är under utveckling. Lägg in filer för den redan påbörjade webbplatsen.
 6. Lägg till scripts i informationen (package.json). Ange "parcel" som start och "parcel build" som build. Detta paketerar ihop webbplatsens olika delar inför publicering.
 7. Ange type="module" inom script-taggen i HTML-filerna. PARCEL paketerar då ihop samtliga JS-filer i en extern fil automatiskt vid publicering.
 8. Testkör projektet genom *npm start* i terminalen. PARCEL startas och skapar en live-server där webbplatsen visas. Filerna för visning/testkörning läggs i en ny .dist-mapp medan src-mappen förblir en mapp för arbetsfiler.
@@ -22,3 +22,4 @@ Detta optimerar och minifiera olika filer och publicerar även projektändringar
 15. Gör en commit med ändringarna för steg 14, denna gång till dev-branchen.
 16. Skapa ett innehåll med text på index.html och process.html och gör commits efter varje sida blivit klar.
 17. Skapa ett innehåll med bilder på photos.html och nyttja PARCELs stöd för bildhantering genom inställningar i srcset-taggen. Bilderna storleksändras, konverteras och optimeras då enligt inställningarna. Gör en commit med ändringarna.
+18. Skapa en sharp.config.json-fil och ange bildinställningar för jpeg-format och webp-format. Gör en commit med ändringarna.

@@ -19,6 +19,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Rubriker. */
+
+h1 {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+h2, h3 {
+    text-align: center;
+    margin: 2rem 0 0.5rem 0;
+}
+
 
 
 /* HEADER INKL. LOGOTYP och MOBIL-MENY. */
@@ -225,17 +237,7 @@ nav a:hover {
     }
 }
 
-/* RUBRIKER FÖR SAMTLIGA SIDOR. */
 
-h1 {
-    text-align: center;
-    margin: 2rem 0 2rem 0;
-}
-
-h2, h3 {
-    text-align: center;
-    margin: 2rem 0 0.5rem 0;
-}
 
 /* MAIN, INDEX. */
 
@@ -269,7 +271,7 @@ h2, h3 {
 }
 
 .img {
-    border: 1px solid #e6e5e5;
+    border: 6px double #004F4F;
     border-radius: 10%;
     width: 100%;
     height: auto;
@@ -309,7 +311,7 @@ h2, h3 {
     }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 1201px) {
     .grid-container-photos {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
