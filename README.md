@@ -23,3 +23,4 @@ Detta optimerar och minifiera olika filer och publicerar även projektändringar
 16. Skapa ett innehåll med text på index.html och process.html och gör commits efter varje sida blivit klar.
 17. Skapa ett innehåll med bilder på photos.html och nyttja PARCELs stöd för bildhantering genom inställningar i srcset-taggen. Bilderna storleksändras, konverteras och optimeras då enligt inställningarna. Gör en commit med ändringarna.
 18. Skapa en sharp.config.json-fil och ange bildinställningar för jpeg-format och webp-format. Gör en commit med ändringarna.
+19. Gör en merge av dev-branchen och main-branchen så att samtliga filer och en uppdaterad och klar version av webbplatsen ligger samlad i main.
