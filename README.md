@@ -14,5 +14,9 @@ Detta optimerar och minifiera olika filer och publicerar även projektändringar
 7. Ange type="module" inom script-taggen i HTML-filerna. PARCEL paketerar då ihop samtliga JS-filer i en extern fil automatiskt vid publicering.
 8. Testkör projektet genom *npm start* i terminalen. PARCEL startas och skapar en live-server där webbplatsen visas. Filerna för visning/testkörning läggs i en ny .dist-mapp medan src-mappen förblir en mapp för arbetsfiler.
 9. Kör *npm run build* i terminalen för att göra webbplatsen redo för publicering. Det som sker automatiskt är att HTML-filerna och CSS-filerna samt minifierar och transpilerar JS-filerna.
-10. Skapa en README-fil och publicera projektet till GitHub. Projektet publiceras och en första commit görs automatiskt.
-11. Publicera projektet på plattformen Netlify. Bygg-kommandot är npm run build medan publicerings-mapp är .dist.    
+10. Lägg till .dist samt .parcel-cache i .gitignore. De kommer då inte versionhanteras.
+11. Skapa en README-fil och publicera projektet till GitHub. Projektet publiceras och en första commit görs automatiskt.
+12. Publicera projektet på plattformen Netlify. Bygg-kommandot är npm run build medan publicerings-mapp är .dist.  
+13. Skapa en dev-branch i GitHub. Arbetsfiler och publicerings-filer skiljs då åt under utvecklingen av webbplatsen tills dess att den är klar.
+14. Möjliggör bakåtkompabilitet genom att lägga till browserslist-inställningar i package.json-filen.
+15. Skapa en sharp.config.json-fil för att möjjliggöra inställningar för bildoptimering.
