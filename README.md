@@ -20,3 +20,4 @@ Detta optimerar och minifiera olika filer och publicerar även projektändringar
 13. Skapa en dev-branch i GitHub. Arbetsfiler och publicerings-filer skiljs då åt under utvecklingen av webbplatsen tills dess att den är klar.
 14. Möjliggör bakåtkompabilitet genom att lägga till browserslist-inställningar i package.json-filen.
 15. Skapa en sharp.config.json-fil för att möjjliggöra inställningar för bildoptimering.
+16. Gör en commit med ändringarna, denna gång till dev-branchen.
